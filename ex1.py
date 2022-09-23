@@ -1,7 +1,10 @@
-n = int(input())
 i = 1
-sum = 0
-while i <= n:
-    sum = sum + (1/i)
-    i += 1
-print(round(sum, 3))
+x = 1
+
+while x != 0:
+    x = int(input())
+    if x > 0:
+        i = i * x
+    elif x < 0:
+        continue
+print(i)
