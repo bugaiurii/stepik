@@ -1,12 +1,19 @@
-names = input().lower().split()
-i = 0
+n = int(input())
+i = 1
+mylist = []
 
-while i < len(names):
-    if names[i][0] == names[i][-1]:
-        print('ДА')
-        break
-    else:
-        i += 1
+if n >= 100:
+    print(f'слишком большое значение n')
 else:
-    print('НЕТ')
+    while i <= n:
+        if i % 3 == 0 and i % 5 == 0:
+            mylist.append(i)
+        i += 1
+    else:
+        print(*mylist)
+
+
+
+
+
 
