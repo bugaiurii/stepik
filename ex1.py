@@ -1,5 +1,7 @@
-i = 100
-while i < 1000:
-    if i % 47 == 43 and i % 3 == 0:
-        print(i, end = ' ')
+n = int(input())
+i = 1
+sum = 0
+while i <= n:
+    sum = sum + (1/i)
     i += 1
+print(round(sum, 3))
