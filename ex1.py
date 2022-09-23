@@ -1,9 +1,12 @@
-city = input().split()
+names = input().lower().split()
 i = 0
-while i < len(city):
-    if len(city[i]) < 6:
-        print('НЕТ')
+
+while i < len(names):
+    if names[i][0] == names[i][-1]:
+        print('ДА')
         break
-    i += 1
+    else:
+        i += 1
 else:
-    print('ДА')
+    print('НЕТ')
+
